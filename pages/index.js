@@ -97,7 +97,7 @@ const projects = [
     prodUrl: 'https://human-music-podcast.herokuapp.com/',
     image: timelessIntegration,
     description:
-      'In this project I don’t feel that I was able to work in a consistent way, and the end result is an expression of that. It works well, it does what I wanted it to do, but I think that I could have done better if I had been able to organize the work in a different way. If I had established since the beginning what I wanted to do so that I could focus better the work, and through that process be able to educate myself in the different concepts of the framework that I used (React). I spent a big part of the development process doing stuff almost automatically, and without reading too much documentation. This comes from a domain of action that is limited, and that I need to broaden if I want to achieve better results in this education process. But the most important aspect of all of this is to do the work, it is to ship the project no matter what, and that’s what I’m doing now. Facing the sensations that come into my being because of not having done it ‘properly’ is what brings up the long term gains, which is what I’m striving for. Overall, I feel complete. It has been a huge challenge to trust myself and the podcast project is something that makes me feel really anxious, but I’m sure that one day all this effort will pay off.',
+      'In this project I don&apos;t feel that I was able to work in a consistent way, and the end result is an expression of that. It works well, it does what I wanted it to do, but I think that I could have done better if I had been able to organize the work in a different way. If I had established since the beginning what I wanted to do so that I could focus better the work, and through that process be able to educate myself in the different concepts of the framework that I used (React). I spent a big part of the development process doing stuff almost automatically, and without reading too much documentation. This comes from a domain of action that is limited, and that I need to broaden if I want to achieve better results in this education process. But the most important aspect of all of this is to do the work, it is to ship the project no matter what, and that&apos;s what I&apos;m doing now. Facing the sensations that come into my being because of not having done it ‘properly&apos; is what brings up the long term gains, which is what I&apos;m striving for. Overall, I feel complete. It has been a huge challenge to trust myself and the podcast project is something that makes me feel really anxious, but I&apos;m sure that one day all this effort will pay off.',
   },
 ];
 
@@ -124,10 +124,15 @@ export default function Home(props) {
   ];
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('jpfraneto@gmail.com');
-    alert(
-      'My email was copied into your clipboard. Thanks for getting in touch.'
-    );
+    navigator.clipboard
+      .writeText('jpfraneto@gmail.com')
+      .then(() => {
+        alert(
+          'My email was copied into your clipboard. Thanks for getting in touch.'
+        );
+        return 'jpfraneto@gmail.com';
+      })
+      .catch(err => console.log(err));
   };
   return (
     <>
@@ -147,18 +152,19 @@ export default function Home(props) {
             </ul>
           </div>
           <div className={styles.letsChatBtnContainer}>
-            <button onClick={handleCopyEmail}>Let's Chat</button>
+            <button onClick={handleCopyEmail}>Let&apos;s Chat</button>
           </div>
         </nav>
         <div ref={heroSection} className={styles.mainContainer}>
           <section className={`${styles.heroContainer} ${styles.container}`}>
             <div className={styles.textContainer}>
-              <h2>Hello! I'm JP.</h2>
+              <h2>Hello! I&apos;m JP.</h2>
               <h2>Full Stack Developer</h2>
               <h2>Do you need help?</h2>
               <div className={styles.iconsContainer}>
                 <a
                   className={styles.twitterIcon}
+                  rel='noreferrer'
                   href='https://www.twitter.com/jpfraneto'
                   target='_blank'
                 >
@@ -167,12 +173,14 @@ export default function Home(props) {
                 <a
                   href='https://www.linkedin.com/in/jpfraneto/'
                   target='_blank'
+                  rel='noreferrer'
                   className={styles.linkedinIcon}
                 >
                   <SiLinkedin size={44} />
                 </a>
                 <a
                   href='https://github.com/jpfraneto'
+                  rel='noreferrer'
                   target='_blank'
                   className={styles.githubIcon}
                 >
@@ -197,19 +205,19 @@ export default function Home(props) {
               {' '}
               <h3>About Me</h3>
               <p>
-                Living in southern Chile, I’m an industrial and mechanical
-                engineer, kundalini yoga instructor, father of a beautiful
-                little girl and avid explorer of all the possibilities of this
-                amazing experience called life. I call myself a generalist,
-                always willing to learn new things, and widening my scope of
-                action.
+                I&apos;m an industrial and mechanical engineer, kundalini yoga
+                instructor, father of a beautiful little girl and avid explorer
+                of all the possibilities of this amazing experience called life.
+                I call myself a generalist, always willing to learn new things,
+                trying to widen my scope of action.
               </p>
               <p>
                 Before Covid I was creating the best ice cream store of the
-                world, but I had to shut down that project because we couldn’t
-                gather people together, and that was everything that we wanted.
-                After that I had an idea for how to share our products online,
-                but had to build it because I did not know how to explain it.
+                world, but I had to shut down that project because we
+                couldn&apos;t gather people together, and that was everything
+                that we wanted. After that I had an idea for how to share our
+                products online, but had to build it because I did not know how
+                to explain it. started to teach me how to code.
               </p>
               <p>
                 That got me hooked with programming, and since then I created
@@ -228,8 +236,9 @@ export default function Home(props) {
               {' '}
               <h3>Skills & Experience</h3>
               <p>
-                I’m very good at bringing myself into places that I don’t know.
-                I feel comfortable there, as it is the place where growth lies.
+                I&apos;m very good at bringing myself into places that I
+                don&apos;t know. I feel comfortable there, as it is the place
+                where growth lies.
               </p>
               <p>These are the technologies that I have used in my projects:</p>
               <div className={styles.technologiesImagesContainer}>
@@ -254,6 +263,7 @@ export default function Home(props) {
               {projects.map((project, index) => {
                 return (
                   <PortfolioCard
+                    key={index}
                     image={project.image}
                     url={project.url}
                     prodUrl={project.prodUrl}
@@ -271,17 +281,17 @@ export default function Home(props) {
                 because I have ideas for applications that can make the world a
                 better place. But for that, I need to become more comfortable
                 with everything that is possible. I have so much to learn, and
-                I’m abundant in willingness to do whatever is needed from me so
-                that I can achieve my goals. If you trust in me, I will give my
-                best every day to be in service of the mission of your company.
-                I have a lot to give.
+                I&apos;m abundant in willingness to do whatever is needed from
+                me so that I can achieve my goals. If you trust in me, I will
+                give my best every day to be in service of the mission of your
+                company. I have a lot to give.
               </p>
               <div className={styles.letsChatBtnContainer}>
-                <button onClick={handleCopyEmail}>Let's Chat</button>
+                <button onClick={handleCopyEmail}>Let&apos;s Chat</button>
               </div>
             </div>
 
-            <Image src={jps} />
+            <Image src={jps} alt='jp images' />
           </footer>
         </div>
       </>

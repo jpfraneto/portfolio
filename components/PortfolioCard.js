@@ -6,7 +6,12 @@ const PortfolioCard = ({ image, prodUrl, url, description }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div className={styles.cardContainer}>
-      <a className={styles.urlLink} href={prodUrl} target='_blank'>
+      <a
+        className={styles.urlLink}
+        href={prodUrl}
+        rel='noreferrer'
+        target='_blank'
+      >
         {url}
       </a>
       <div
@@ -14,7 +19,11 @@ const PortfolioCard = ({ image, prodUrl, url, description }) => {
         onMouseLeave={() => setHovered(false)}
         className={styles.imageContainerShadow}
       >
-        <Image src={image} className={styles.imageContainer} />
+        <Image
+          src={image}
+          className={styles.imageContainer}
+          alt='Wena compare!'
+        />
         {hovered && (
           <button
             className={styles.projectInfoBtn}
