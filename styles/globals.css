@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Inspiration&family=Kanit&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Anek Latin', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {

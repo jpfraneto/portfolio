@@ -1,116 +1,152 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 140px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.navbar {
+  height: 64px;
+  padding: 0 140px;
+  width: 100%;
+  background-color: #979797;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid black;
 }
 
-.footer {
+.links {
+  list-style-type: none;
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
 }
 
-.footer a {
+.links li {
+  margin: 0 12px;
+  font-family: 'Anek Latin', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.links li:hover {
+  color: rgba(0, 0, 0, 0.22);
+}
+
+.jpname {
+  font-family: 'Inspiration', cursive;
+  font-size: 52px;
+  transform: translateY(-8px);
+}
+
+.letsChatBtnContainer {
+}
+
+.letsChatBtnContainer button {
+  height: 35px;
+  width: 145px;
+  font-size: 23px;
+  background-color: #fcda69;
+  border: solid 1px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.letsChatBtnContainer button:hover {
+  background-color: #bea44e;
+}
+
+.heroContainer {
+  height: calc(100vh - 64px);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  position: relative;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.textContainer {
+  padding-top: 10%;
+  line-height: 22px;
+}
+.textContainer h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 42px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.iconsContainer > * {
+  margin: 0 8px;
 }
 
-.title {
+.twitterIcon:hover {
+  color: #1da1f2;
+}
+
+.linkedinIcon:hover {
+  color: #0077b5;
+}
+
+.githubIcon:hover {
+  color: #171515;
+}
+
+.imageContainer {
+  position: absolute;
+  bottom: -4px;
+  right: 10%;
+  overflow: hidden;
+}
+
+.aboutMeSection {
+  height: 100vh;
+  background-color: #fcda69;
+  padding-top: 8%;
+}
+
+.aboutmeTextContainer {
+  max-width: 744px;
+}
+
+.container h3 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 42px;
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
 }
 
-.title,
-.description {
+.skillsSection {
+  height: 100vh;
+  background-color: white;
+}
+
+.skillsContainer {
+  max-width: 744px;
+  padding-top: 8%;
+}
+
+.portfolioTextContainer {
+  max-width: 744px;
+  padding-top: 8%;
+}
+
+.technologiesImagesContainer {
+  margin-top: 60px;
+}
+
+.portfolioContainer {
+  background-color: #fcda69;
+  height: auto;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.portfolioElementsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerContainer {
+  position: relative;
+  padding-top: 33px;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.footerTextContainer {
+  max-width: 666px;
+  margin: 0 auto;
 }

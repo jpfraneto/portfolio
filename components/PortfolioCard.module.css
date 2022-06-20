@@ -1,0 +1,38 @@
+.cardContainer {
+  text-align: center;
+  width: 48%;
+  min-width: 444px;
+  margin: 12px 0;
+  position: relative;
+}
+
+.urlLink {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.urlLink:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.imageContainer {
+}
+
+.imageContainerShadow {
+  filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.8));
+}
+
+.imageContainer:hover {
+  filter: blur(2px);
+  cursor: pointer;
+}
+
+.projectInfoBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projectInfoBtn:hover {
+}
