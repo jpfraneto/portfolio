@@ -8,6 +8,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: 'Anek Latin', sans-serif;
   scroll-behavior: smooth;
+  min-width: 360px;
 }
 
 a {

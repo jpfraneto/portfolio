@@ -1,5 +1,6 @@
 .container {
-  padding: 0 140px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .navbar {
@@ -56,11 +57,13 @@
 .heroContainer {
   height: calc(100vh - 64px);
   display: flex;
-  position: relative;
 }
 
 .textContainer {
-  padding-top: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   line-height: 22px;
 }
 .textContainer h2 {
@@ -85,16 +88,17 @@
 }
 
 .imageContainer {
-  position: absolute;
-  bottom: -4px;
-  right: 10%;
-  overflow: hidden;
+  position: relative;
+  width: 50%;
+  aspect-ratio: 16/9;
+  max-width: 444px;
 }
 
 .aboutMeSection {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fcda69;
   padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .aboutmeTextContainer {
@@ -142,11 +146,88 @@
 
 .footerContainer {
   position: relative;
-  padding-top: 33px;
+  padding: 11px 0 22px;
   text-align: center;
 }
 
 .footerTextContainer {
   max-width: 666px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1060px) {
+  .container {
+    padding: 0 60px;
+  }
+  .textContainer h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .links {
+    display: none;
+  }
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .textContainer h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 33px;
+  }
+  .heroContainer {
+    height: calc(100vh - 64px);
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContainer {
+    width: 100%;
+    height: 50%;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .textContainer h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 33px;
+  }
+  .heroContainer {
+    height: calc(100vh - 64px);
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContainer {
+    width: 100%;
+    height: 50%;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 50%;
+  }
+  .aboutMeSection {
+    padding-bottom: 8px;
+  }
+  .skillsSection {
+    height: auto;
+    padding-bottom: 18px;
+  }
+  .footerContainer {
+    padding: 8px;
+    width: 100%;
+  }
 }

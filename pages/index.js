@@ -14,7 +14,6 @@ import theInfiniteJest from '../public/images/portfolio/theInfiniteJest.png';
 import theOpenSourceFactory from '../public/images/portfolio/theOpenSourceFactory.png';
 import worldsOfSound from '../public/images/portfolio/worldsOfSound.png';
 import timelessIntegration from '../public/images/portfolio/timelessIntegration.png';
-import jps from '../public/images/jps.png';
 import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si';
 import PortfolioCard from '../components/PortfolioCard';
 
@@ -191,8 +190,8 @@ export default function Home(props) {
             <div className={styles.imageContainer}>
               <Image
                 alt='JP Presentation Image'
-                width='600px'
-                height='600px'
+                layout='fill'
+                objectFit='contain'
                 src={jpgroup}
               />
             </div>
@@ -217,14 +216,16 @@ export default function Home(props) {
                 couldn&apos;t gather people together, and that was everything
                 that we wanted. After that I had an idea for how to share our
                 products online, but had to build it because I did not know how
-                to explain it. started to teach me how to code.
+                to explain it. Because of that I started to teach myself how to
+                code.
               </p>
               <p>
-                That got me hooked with programming, and since then I created
-                The Open Source Factory, which was the guiding frame that I
-                created for myself to build different original projects so that
-                I could become a better programmer. I just want to learn more,
-                and get better at this craft.
+                I was completely hooked with the art of programming, its endless
+                possibilities, and because of that I created The Open Source
+                Factory, which was the guiding frame that I created for myself
+                to build different original projects so that I could become a
+                better programmer. I just want to learn more, and get better at
+                this craft.
               </p>
             </div>
           </section>
@@ -290,8 +291,6 @@ export default function Home(props) {
                 <button onClick={handleCopyEmail}>Let&apos;s Chat</button>
               </div>
             </div>
-
-            <Image src={jps} alt='jp images' />
           </footer>
         </div>
       </>
