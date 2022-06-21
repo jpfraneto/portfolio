@@ -1,8 +1,8 @@
 .cardContainer {
   text-align: center;
   width: 48%;
-  min-width: 333px;
-  margin: 12px 0;
+  min-width: 300px;
+  margin: 12px 8px 12px 0;
   position: relative;
 }
 
@@ -39,5 +39,10 @@
 .projectInfoBtn:hover {
 }
 
-@media only screen and (max-width: 444px) {
+@media only screen and (max-width: 950px) {
+  .cardContainer {
+    text-align: center;
+    width: 80%;
+    position: relative;
+  }
 }
