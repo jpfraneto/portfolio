@@ -164,6 +164,9 @@
 }
 
 @media only screen and (max-width: 1060px) {
+  .navbar {
+    padding: 0 60px;
+  }
   .container {
     padding: 0 60px;
   }
@@ -173,13 +176,13 @@
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 960px) {
   .portfolioElementsContainer {
     justify-content: center;
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 780px) {
   .navbar {
     width: 100%;
     justify-content: space-between;
@@ -189,8 +192,11 @@
     display: none;
   }
   .container {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .textContainer {
+    padding-bottom: 0;
   }
   .textContainer h2 {
     font-family: 'Kanit', sans-serif;
