@@ -32,6 +32,15 @@ const projects = [
       'This is the project that got me started into the programming world. I had an idea, and I had to learn how to code in order to build it into a reality. This idea was creating a space where people could share music recommendations and I created an algorythm that picks one of those recommendations randomly and brings it into a state that I call the present, on which there is always a recommendation being played. When the system runs out of recommendations it starts again, so it is an eternal loop of music that is intended to be a repository of good music that people will share because of something special that that piece has meant in their lives.',
   },
   {
+    name: 'The Infinite Jest',
+    sourceCodeUrl: 'https://github.com/jpfraneto/the-infinite-jest-v2',
+    url: 'www.theinfinitejest.tv',
+    prodUrl: 'https://www.theinfinitejest.tv',
+    image: theInfiniteJest,
+    description:
+      'The Infinite Jest is the movie that David Foster Wallace imagined as being the most fun thing on the earth. This project is my interpretation of that idea, where I created an eternal thread of content that is build by the sharing of people from all over the world. Each person can have his/her profile on which she can share media that is important for her, and as soon as that media is added, it will be a potential media that will be played in the eternal thread. The whole system is based in randomness, and that is my take on life. Opening to the unknown, and realizing the value that it has.',
+  },
+  {
     name: 'Drip Work',
     sourceCodeUrl: 'https://github.com/jpfraneto/drip-work',
     url: 'www.drip-work.app',
@@ -50,13 +59,13 @@ const projects = [
       'This is a website that I created for sharing bedtime stories that then could be read to little children (or grown ups) when they go to bed (or at any time really). Halfway through I realized that that was not what I wanted to build and I realized that the project was a place where I would share the first 40 days of life of my little daughter. It was an amazing journey to go through the coding of this project and pivot in the middle.',
   },
   {
-    name: 'Second Brain',
-    sourceCodeUrl: 'https://github.com/jpfraneto/jpfraneto',
-    url: 'jp.jpfraneto.com',
-    prodUrl: 'https://jp.jpfraneto.com',
-    image: jpfraneto,
+    name: 'The Open Source Factory',
+    sourceCodeUrl: 'https://github.com/jpfraneto/the-open-source-factory',
+    url: 'www.theopensourcefactory.com',
+    prodUrl: 'https://cryptic-hollows-96549.herokuapp.com/',
+    image: theOpenSourceFactory,
     description:
-      'I use this website as the place on which I store my personal information so that I can access it from everywhere. I have in here yoga classes, thoughts on content, pieces of art that I have created, challenges that I have posed myself to pursue and also the lessons that I have learned from different educational content that I have used to become better at what I care.',
+      'Establishing the foundations from which I will build 13 open source projects throughout the following year. I will develop self-mastery and a strong capacity of commitment and believing on my own talent by this, and also be able to spend important and quality time with myself and my famlily. It is really important for me to limit the amount of time that I work every day and develop a strong capacity of focus on the time that I sit down to work, and I will be training myself on that realm.',
   },
   {
     name: 'Mamiferas',
@@ -68,6 +77,16 @@ const projects = [
       'This is a project that was created with the hope of building a community around the process of bringing a new human being into this world. Im going through that process right now, and with the help and support of other people that are willing to share their experience (as they go through or have been through this process) and empower others because of that, there is so much that can be done. One of the biggest takeaways of this project is the importance of early feedback for the development of the platform. I was throughout the month getting constant help from my partner, and building the platform with that advice in mind (thinking about what could be useful for her), but three days before publishing I sent a chain of emails to 20 persons that are going through the pregnancy now and 2 of them answered me, and gave me really useful advice that would have been interesting to have in the beginning so that I could build the platform with them in mind. The challenge there is how to communicate my idea so that they can understand the project without it existing yet. And because Im doing this whole OSF thing just to train my skills, and not necessarily to build something useful to someone specific, that may be a challenge. I have to better understand this game of wanting to express my full creativity and wanting to build something useful, because there is a intersection there that I can leverage if Im intelligent enough. Thats the great aspect of this being only the third project of the whole system, because there is so much to be done in the future. Who knows what will end up happening.',
   },
   {
+    name: 'Second Brain',
+    sourceCodeUrl: 'https://github.com/jpfraneto/jpfraneto',
+    url: 'jp.jpfraneto.com',
+    prodUrl: 'https://jp.jpfraneto.com',
+    image: jpfraneto,
+    description:
+      'I use this website as the place on which I store my personal information so that I can access it from everywhere. I have in here yoga classes, thoughts on content, pieces of art that I have created, challenges that I have posed myself to pursue and also the lessons that I have learned from different educational content that I have used to become better at what I care.',
+  },
+
+  {
     name: 'rudraKY',
     sourceCodeUrl: 'https://github.com/jpfraneto/rudraky',
     url: 'www.rudraKY.com',
@@ -76,15 +95,7 @@ const projects = [
     description:
       'This project is all about the teaching of Kundalini Yoga, and it is intended for teachers that want to use it as a tool for creating their classes (and going through them). It has the feature of adding a class which other people can edit afterwards, and you can go through that class exercize after exercize with a timer so that you can check the time that every exercize is being done. There is also a recordings page on which people that have made their classes can share the recording for further exploration from other teachers, so that we can all build a network of knowledge based on what it has been for others to give their classes. We are all in this learning together, and the fact that I do a class with a person that has been teaching for a long time, and then with a classmate that is just learning as I do, teaches me a lot about what are the key aspects that I need to have in mind if I want to get better at what Im doing. That is why I added this recording part, so that we can together build this knowledge. There was a whole part of it related to building a community that was created with Discourse, but I realized it was not useful in this moment so I decided to erase it. But probably it will come back in the future, with more strength. I stopped putting my energy in it because I thought I was alone, and then realized that there was people that were finding value on it. It is important for me to trust in the things that I build and how other people can find value in them, so I will build it again and point to it in comunidad.rudraky.com. Overall this was a project where I learned a lot, and that helped me to come out of tutorial hell and build real stuff. I feel commited, motivated and focused.',
   },
-  {
-    name: 'The Infinite Jest',
-    sourceCodeUrl: 'https://github.com/jpfraneto/the-infinite-jest-v2',
-    url: 'www.theinfinitejest.tv',
-    prodUrl: 'https://www.theinfinitejest.tv',
-    image: theInfiniteJest,
-    description:
-      'The Infinite Jest is the movie that David Foster Wallace imagined as being the most fun thing on the earth. This project is my interpretation of that idea, where I created an eternal thread of content that is build by the sharing of people from all over the world. Each person can have his/her profile on which she can share media that is important for her, and as soon as that media is added, it will be a potential media that will be played in the eternal thread. The whole system is based in randomness, and that is my take on life. Opening to the unknown, and realizing the value that it has.',
-  },
+
   {
     name: 'Worlds Of Sound',
     sourceCodeUrl: 'https://github.com/jpfraneto/worlds-of-sound',
@@ -92,17 +103,9 @@ const projects = [
     prodUrl: 'https://www.worldsofsound.org',
     image: worldsOfSound,
     description:
-      'I will merge the APIs from the three services that I use to listen to music: Youtube, Spotify and Soundcloud. The idea was to create a board similar of the one that a DJ has and be able to play and mix music in it from these different platform.',
+      'The goal of this project was to merge the three systems that I use for listening to music in one. It was not possible. The Soundcloud API is horrible. The spotify is cool but limited (I cant believe why I dont have the option to retrieve someones liked albums list) and the one is the best for me, but I already built human music from there. \n I dont feel comfortable with how this project ended, but I dont really care. It was a good try!',
   },
-  {
-    name: 'The Open Source Factory',
-    sourceCodeUrl: 'https://github.com/jpfraneto/the-open-source-factory',
-    url: 'www.theopensourcefactory.com',
-    prodUrl: 'https://cryptic-hollows-96549.herokuapp.com/',
-    image: theOpenSourceFactory,
-    description:
-      'Establishing the foundations from which I will build 13 open source projects throughout the following year. I will develop self-mastery and a strong capacity of commitment and believing on my own talent by this, and also be able to spend important and quality time with myself and my famlily. It is really important for me to limit the amount of time that I work every day and develop a strong capacity of focus on the time that I sit down to work, and I will be training myself on that realm.',
-  },
+
   {
     name: 'Timeless Integration Podcast',
     sourceCodeUrl: 'https://github.com/jpfraneto/human-music-podcast',
