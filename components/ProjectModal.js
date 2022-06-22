@@ -22,6 +22,7 @@ const ProjectModal = ({ setIsModalOpen, projectInformationForModal }) => {
         </div>
         <div className={styles.projectDescription}>
           {projectInformationForModal.description
+            .replace('&apos;', "'")
             .split('\n')
             .map((x, index) => {
               return <p key={index}>{x}</p>;

@@ -39,10 +39,22 @@
   border: solid black 2px;
   border-radius: 80px;
   padding: 8px 12px;
-  margin: 0 4px;
+  margin: 0 4px 8px;
   cursor: pointer;
 }
 
 .projectLinks button:hover {
   filter: brightness(85%);
+}
+
+@media only screen and (max-width: 780px) {
+  .modalContainer {
+    height: 100%;
+    padding: 0 12px;
+    position: relative;
+    background-color: var(--main-bg-color);
+  }
+  .projectInformation {
+    padding: 0;
+  }
 }
