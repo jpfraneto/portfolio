@@ -5,7 +5,6 @@ import Button from './Button';
 import Image from 'next/image';
 
 const ProjectModal = ({ setIsModalOpen, projectInformationForModal }) => {
-  console.log(projectInformationForModal);
   return (
     <div className={styles.modalContainer}>
       <span

@@ -26,7 +26,7 @@ const projects = [
     name: 'Human Music',
     sourceCodeUrl: 'https://github.com/jpfraneto/human-music',
     url: 'www.human-music.com',
-    prodUrl: 'www.human-music.com',
+    prodUrl: 'https://www.human-music.com',
     image: humanMusic,
     description:
       'This is the project that got me started into the programming world. I had an idea, and I had to learn how to code in order to build it into a reality. This idea was creating a space where people could share music recommendations and I created an algorythm that picks one of those recommendations randomly and brings it into a state that I call the present, on which there is always a recommendation being played. When the system runs out of recommendations it starts again, so it is an eternal loop of music that is intended to be a repository of good music that people will share because of something special that that piece has meant in their lives.',
