@@ -1,0 +1,48 @@
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  position: relative;
+  background-color: var(--main-bg-color);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  color: red;
+}
+
+.projectInformation {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0 80px;
+  overflow-y: scroll;
+}
+
+.projectInformation h2 {
+  font-family: 'Kanit', sans-serif;
+}
+.imageContainer {
+  border-radius: 10px;
+  filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.8));
+}
+
+.projectLinks button {
+  background-color: var(--tertiary);
+  border: solid black 2px;
+  border-radius: 80px;
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.projectLinks button:hover {
+  filter: brightness(85%);
+}

@@ -1,5 +1,6 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useRouter } from 'next/router';
+import ReactModal from 'react-modal';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
@@ -17,10 +18,13 @@ import worldsOfSound from '../public/images/portfolio/worldsOfSound.png';
 import timelessIntegration from '../public/images/portfolio/timelessIntegration.png';
 import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si';
 import PortfolioCard from '../components/PortfolioCard';
+import ProjectModal from '../components/ProjectModal';
+import Technologies from '../components/Technologies';
 
 const projects = [
   {
     name: 'Human Music',
+    sourceCodeUrl: 'https://github.com/jpfraneto/human-music',
     url: 'www.human-music.com',
     prodUrl: 'www.human-music.com',
     image: humanMusic,
@@ -29,14 +33,16 @@ const projects = [
   },
   {
     name: 'Drip Work',
+    sourceCodeUrl: 'https://github.com/jpfraneto/drip-work',
     url: 'www.drip-work.app',
     prodUrl: 'https://ancient-spire-82753.herokuapp.com/',
     image: dripWork,
     description:
-      'This project is for establishing a routine of Deep Work. The intention behind it is to serve as a repository of deep work sessions, on which you can log all your sessions and have a timer on each that will help you realize how much deep work have you done lately. This is an important skill to develop and cultivate, and the intention of this place is for building that.',
+      'When I think about what to write in this place, as a presentation of this project that I created for you, I come up to the realization that the best that I can do is share with you the intentions that I had as I was building it. This one, Drip Work, was one of the first projects that I created in the frame of The Open Source Factory. It is a foundational one, in the sense that its purpose was to build for myself a scaffolding that I could use in every session on which I came to my computer to do my work. I find it very important to be able to focus deeply, and then relax as much as I can, so that I can get the best out of my capacities. It is in this realm that I found out about Cal Newports concept of Deep Work, and Drip Work is my interpretation of it. \n It is the means by which I put myself on service to do the important work that I can do. \n For that, I need to be focused. I need to put my whole being into the task at hand. I need something to hold me in that process, and that comes with structure. With the structure of knowing what are the missions for that session. With the structure of knowing for how much time Ill work. I need to be able to tell my surroundings which is going to be my necessity of time for that session, so that they can count on me aftewards. As my responsibilities grow, I have a bigger necessity for providing my best in every area of my life, and this projects intention is that. To give me the space to move in that direction. There is a profile on which all my deep work sessions are stored, there is a timer that starts every time that I want to start a new session, and there is the opportunity to add all these sessions into every project on which Im working. It represents what I care about in my life, which is building structures that enable me to express my best.',
   },
   {
     name: 'Hola Mila',
+    sourceCodeUrl: 'https://github.com/jpfraneto/milasuniverse',
     url: 'www.holamila.com',
     prodUrl: 'https://www.holamila.com',
     image: holamila,
@@ -45,6 +51,7 @@ const projects = [
   },
   {
     name: 'Second Brain',
+    sourceCodeUrl: 'https://github.com/jpfraneto/jpfraneto',
     url: 'jp.jpfraneto.com',
     prodUrl: 'https://jp.jpfraneto.com',
     image: jpfraneto,
@@ -53,6 +60,7 @@ const projects = [
   },
   {
     name: 'Mamiferas',
+    sourceCodeUrl: 'https://github.com/jpfraneto/mamiferas',
     url: 'www.mamiferas.org',
     prodUrl: 'https://www.mamiferas.org',
     image: mamiferas,
@@ -61,6 +69,7 @@ const projects = [
   },
   {
     name: 'rudraKY',
+    sourceCodeUrl: 'https://github.com/jpfraneto/rudraky',
     url: 'www.rudraKY.com',
     prodUrl: 'https://www.rudraKY.com',
     image: rudraKY,
@@ -69,6 +78,7 @@ const projects = [
   },
   {
     name: 'The Infinite Jest',
+    sourceCodeUrl: 'https://github.com/jpfraneto/the-infinite-jest-v2',
     url: 'www.theinfinitejest.com',
     prodUrl: 'https://www.theinfinitejest.com',
     image: theInfiniteJest,
@@ -77,6 +87,7 @@ const projects = [
   },
   {
     name: 'Worlds Of Sound',
+    sourceCodeUrl: 'https://github.com/jpfraneto/worlds-of-sound',
     url: 'www.worldsofsound.org',
     prodUrl: 'https://www.worldsofsound.org',
     image: worldsOfSound,
@@ -85,6 +96,7 @@ const projects = [
   },
   {
     name: 'The Open Source Factory',
+    sourceCodeUrl: 'https://github.com/jpfraneto/the-open-source-factory',
     url: 'www.theopensourcefactory.com',
     prodUrl: 'https://www.theopensourcefactory.com',
     image: theOpenSourceFactory,
@@ -93,6 +105,7 @@ const projects = [
   },
   {
     name: 'Timeless Integration Podcast',
+    sourceCodeUrl: 'https://github.com/jpfraneto/human-music-podcast',
     url: 'podcast.human-music.com',
     prodUrl: 'https://human-music-podcast.herokuapp.com/',
     image: timelessIntegration,
@@ -102,6 +115,8 @@ const projects = [
 ];
 
 export default function Home(props) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalInformation, setModalInformation] = useState(null);
   const heroSection = useRef(null);
   const aboutMeSection = useRef(null);
   const skillsSection = useRef(null);
@@ -243,9 +258,7 @@ export default function Home(props) {
                 where growth lies.
               </p>
               <p>These are the technologies that I have used in my projects:</p>
-              <div className={styles.technologiesImagesContainer}>
-                <Image alt='Technologies' src={technologies} />
-              </div>
+              <Technologies />
             </div>
           </section>
           <section
@@ -261,15 +274,20 @@ export default function Home(props) {
                 the means to code them into a reality.
               </p>
             </div>
+            <ReactModal className={styles.modalStyles} isOpen={isModalOpen}>
+              <ProjectModal
+                setIsModalOpen={setIsModalOpen}
+                projectInformationForModal={modalInformation}
+              />
+            </ReactModal>
             <div className={styles.portfolioElementsContainer}>
               {projects.map((project, index) => {
                 return (
                   <PortfolioCard
                     key={index}
-                    image={project.image}
-                    url={project.url}
-                    prodUrl={project.prodUrl}
-                    description={project.description}
+                    projectInfo={project}
+                    setIsModalOpen={setIsModalOpen}
+                    setModalInformation={setModalInformation}
                   />
                 );
               })}

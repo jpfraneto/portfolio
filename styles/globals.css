@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Inspiration&family=Kanit&display=swap');
 
+:root {
+  --main-bg-color: #fcda69;
+  --secondary: #8873ef;
+  --tertiary: #b9f2fe;
+}
+
 html,
 body {
   padding: 0;

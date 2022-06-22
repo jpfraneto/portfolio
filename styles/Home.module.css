@@ -7,7 +7,7 @@
   height: 64px;
   padding: 0 140px;
   width: 100%;
-  background-color: #979797;
+  background-color: rgb(238, 238, 238);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,6 +64,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 111px;
   line-height: 22px;
 }
 .textContainer h2 {
@@ -90,8 +91,6 @@
 .imageContainer {
   position: relative;
   width: 50%;
-  aspect-ratio: 16/9;
-  max-width: 444px;
 }
 
 .aboutMeSection {
@@ -119,6 +118,15 @@
 .skillsContainer {
   max-width: 744px;
   padding-top: 8%;
+}
+
+.modalStyles {
+  border: solid black 2px;
+  background-color: #8873ef;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: calc(20vh / 2);
+  height: 80%;
 }
 
 .portfolioTextContainer {

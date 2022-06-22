@@ -34,9 +34,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--tertiary);
+  border: solid black 2px;
+  border-radius: 80px;
+  padding: 8px 12px;
+  margin: 0 4px;
+  font-family: 'Anek Latin', sans-serif;
+
+  cursor: pointer;
 }
 
 .projectInfoBtn:hover {
+  filter: brightness(85%);
 }
 
 @media only screen and (max-width: 950px) {

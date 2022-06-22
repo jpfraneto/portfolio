@@ -1,0 +1,15 @@
+.technologiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.technologiesContainer > * {
+  margin: 12px;
+}
+
+.imageStyles {
+  margin: 8px;
+}

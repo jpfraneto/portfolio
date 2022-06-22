@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './PortfolioCard.module.css';
 
-const PortfolioCard = ({ image, prodUrl, url, description }) => {
+const PortfolioCard = ({
+  projectInfo,
+  setIsModalOpen,
+  setModalInformation,
+}) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div className={styles.cardContainer}>
       <a
         className={styles.urlLink}
-        href={prodUrl}
+        href={projectInfo.prodUrl}
         rel='noreferrer'
         target='_blank'
       >
-        {url}
+        {projectInfo.url}
       </a>
       <div
         onMouseEnter={() => setHovered(true)}
@@ -20,14 +24,17 @@ const PortfolioCard = ({ image, prodUrl, url, description }) => {
         className={styles.imageContainerShadow}
       >
         <Image
-          src={image}
+          src={projectInfo.image}
           className={styles.imageContainer}
           alt='Wena compare!'
         />
         {hovered && (
           <button
             className={styles.projectInfoBtn}
-            onClick={() => alert(description)}
+            onClick={() => {
+              setModalInformation(projectInfo);
+              setIsModalOpen(true);
+            }}
           >
             Project Information
           </button>
