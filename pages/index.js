@@ -53,7 +53,7 @@ const projects = [
     name: 'Second Brain',
     sourceCodeUrl: 'https://github.com/jpfraneto/jpfraneto',
     url: 'jp.jpfraneto.com',
-    prodUrl: 'https://jpfraneto-5xz4mva87-jpfraneto.vercel.app/',
+    prodUrl: 'jpfraneto.vercel.app',
     image: jpfraneto,
     description:
       'Finally I created the new version of my personal website, that will be something like a creational blog for what I think, what I believe, and it is the canvas on which I will explore my future. This is the place where I will come to integrate content, to share my podcast, to share my art, to share my programming projects. There is a lot of things that I do, and I think that this project will be the means by which I make sense of all that and build a consistent basis for what comes next.',
@@ -62,7 +62,7 @@ const projects = [
     name: 'Mamiferas',
     sourceCodeUrl: 'https://github.com/jpfraneto/mamiferas',
     url: 'www.mamiferas.org',
-    prodUrl: 'https://www.mamiferas.org',
+    prodUrl: 'https://mamiferas.herokuapp.com/',
     image: mamiferas,
     description:
       'This is a project that was created with the hope of building a community around the process of bringing a new human being into this world. Im going through that process right now, and with the help and support of other people that are willing to share their experience (as they go through or have been through this process) and empower others because of that, there is so much that can be done. One of the biggest takeaways of this project is the importance of early feedback for the development of the platform. I was throughout the month getting constant help from my partner, and building the platform with that advice in mind (thinking about what could be useful for her), but three days before publishing I sent a chain of emails to 20 persons that are going through the pregnancy now and 2 of them answered me, and gave me really useful advice that would have been interesting to have in the beginning so that I could build the platform with them in mind. The challenge there is how to communicate my idea so that they can understand the project without it existing yet. And because Im doing this whole OSF thing just to train my skills, and not necessarily to build something useful to someone specific, that may be a challenge. I have to better understand this game of wanting to express my full creativity and wanting to build something useful, because there is a intersection there that I can leverage if Im intelligent enough. Thats the great aspect of this being only the third project of the whole system, because there is so much to be done in the future. Who knows what will end up happening.',
@@ -79,8 +79,8 @@ const projects = [
   {
     name: 'The Infinite Jest',
     sourceCodeUrl: 'https://github.com/jpfraneto/the-infinite-jest-v2',
-    url: 'www.theinfinitejest.com',
-    prodUrl: 'https://www.theinfinitejest.com',
+    url: 'www.theinfinitejest.tv',
+    prodUrl: 'https://www.theinfinitejest.tv',
     image: theInfiniteJest,
     description:
       'The Infinite Jest is the movie that David Foster Wallace imagined as being the most fun thing on the earth. This project is my interpretation of that idea, where I created an eternal thread of content that is build by the sharing of people from all over the world. Each person can have his/her profile on which she can share media that is important for her, and as soon as that media is added, it will be a potential media that will be played in the eternal thread. The whole system is based in randomness, and that is my take on life. Opening to the unknown, and realizing the value that it has.',
@@ -98,7 +98,7 @@ const projects = [
     name: 'The Open Source Factory',
     sourceCodeUrl: 'https://github.com/jpfraneto/the-open-source-factory',
     url: 'www.theopensourcefactory.com',
-    prodUrl: 'https://www.theopensourcefactory.com',
+    prodUrl: 'https://cryptic-hollows-96549.herokuapp.com/',
     image: theOpenSourceFactory,
     description:
       'Establishing the foundations from which I will build 13 open source projects throughout the following year. I will develop self-mastery and a strong capacity of commitment and believing on my own talent by this, and also be able to spend important and quality time with myself and my famlily. It is really important for me to limit the amount of time that I work every day and develop a strong capacity of focus on the time that I sit down to work, and I will be training myself on that realm.',
