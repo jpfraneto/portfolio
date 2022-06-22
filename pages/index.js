@@ -56,7 +56,7 @@ const projects = [
     prodUrl: 'https://jp.jpfraneto.com',
     image: jpfraneto,
     description:
-      'Finally I created the new version of my personal website, that will be something like a creational blog for what I think, what I believe, and it is the canvas on which I will explore my future. This is the place where I will come to integrate content, to share my podcast, to share my art, to share my programming projects. There is a lot of things that I do, and I think that this project will be the means by which I make sense of all that and build a consistent basis for what comes next.',
+      'I use this website as the place on which I store my personal information so that I can access it from everywhere. I have in here yoga classes, thoughts on content, pieces of art that I have created, challenges that I have posed myself to pursue and also the lessons that I have learned from different educational content that I have used to become better at what I care.',
   },
   {
     name: 'Mamiferas',
