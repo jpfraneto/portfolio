@@ -15,6 +15,7 @@ body {
   font-family: 'Anek Latin', sans-serif;
   scroll-behavior: smooth;
   min-width: 360px;
+  overflow-x: hidden;
 }
 
 a {

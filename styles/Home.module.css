@@ -63,7 +63,7 @@
   justify-content: center;
   padding-bottom: 111px;
   line-height: 22px;
-  animation: fadeInLeft 2s linear;
+  animation: fadeIn 2s linear;
   opacity: 1;
 }
 
@@ -126,7 +126,7 @@
 .imageContainer {
   position: relative;
   width: 50%;
-  animation: fadeInRight 2s linear;
+  animation: fadeIn 2s linear;
   opacity: 1;
 }
 
