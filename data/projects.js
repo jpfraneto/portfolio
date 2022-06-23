@@ -100,18 +100,18 @@ export const projects = [
       'I use this website as the place on which I store my personal information so that I can access it from everywhere. I have in here yoga classes, thoughts on content, pieces of art that I have created, challenges that I have posed myself to pursue and also the lessons that I have learned from different educational content that I have used to become better at what I care.\n It used to be my portfolio, but I realized that I was conveying too much information, which didnt make any sense to anyone that was not me. Thats why I decided to simplify it, and the website that you are looking at right now is the consequence of that.',
   },
 
-  {
-    name: 'rudraKY',
-    lessonsLearned: '',
-    sourceCodeUrl: 'https://github.com/jpfraneto/rudraky',
-    url: 'www.rudraKY.com',
-    prodUrl: 'https://www.rudraKY.com',
-    image: rudraKY,
-    technicalDescription: '',
+  // {
+  //   name: 'rudraKY',
+  //   lessonsLearned: '',
+  //   sourceCodeUrl: 'https://github.com/jpfraneto/rudraky',
+  //   url: 'www.rudraKY.com',
+  //   prodUrl: 'https://www.rudraKY.com',
+  //   image: rudraKY,
+  //   technicalDescription: '',
 
-    description:
-      'This project is all about the teaching of Kundalini Yoga, and it is intended for teachers that want to use it as a tool for creating their classes (and going through them).\n It has the feature of adding a class which other people can edit afterwards, and you can go through that class exercize after exercize with a timer so that you can check the time that every exercize is being done.\n There is also a recordings page on which people that have made their classes can share the recording for further exploration from other teachers, so that we can all build a network of knowledge based on what it has been for others to give their classes. \n We are all in this learning together, and the fact that I do a class with a person that has been teaching for a long time, and then with a classmate that is just learning as I do, tells me a lot about what are the key aspects that I need to have in mind if I want to get better at what Im doing. That is why I added this recording part, so that we can together discuss and build this knowledge. \n There was a whole part of it related to building a community that was created with Discourse, but I realized it was not useful in this moment so I decided to erase it. But probably it will come back in the future, with more strength. I stopped putting my energy in it because I thought I was alone, and then realized that there was people that were finding value on it. It is important for me to trust in the things that I build and how other people can find value in them, so I will build it again and point to it in comunidad.rudraky.com. Overall this was a project where I learned a lot, and that helped me to come out of tutorial hell and build real stuff. I feel commited, motivated and focused.',
-  },
+  //   description:
+  //     'This project is all about the teaching of Kundalini Yoga, and it is intended for teachers that want to use it as a tool for creating their classes (and going through them).\n It has the feature of adding a class which other people can edit afterwards, and you can go through that class exercize after exercize with a timer so that you can check the time that every exercize is being done.\n There is also a recordings page on which people that have made their classes can share the recording for further exploration from other teachers, so that we can all build a network of knowledge based on what it has been for others to give their classes. \n We are all in this learning together, and the fact that I do a class with a person that has been teaching for a long time, and then with a classmate that is just learning as I do, tells me a lot about what are the key aspects that I need to have in mind if I want to get better at what Im doing. That is why I added this recording part, so that we can together discuss and build this knowledge. \n There was a whole part of it related to building a community that was created with Discourse, but I realized it was not useful in this moment so I decided to erase it. But probably it will come back in the future, with more strength. I stopped putting my energy in it because I thought I was alone, and then realized that there was people that were finding value on it. It is important for me to trust in the things that I build and how other people can find value in them, so I will build it again and point to it in comunidad.rudraky.com. Overall this was a project where I learned a lot, and that helped me to come out of tutorial hell and build real stuff. I feel commited, motivated and focused.',
+  // },
 
   {
     name: 'Worlds Of Sound',
