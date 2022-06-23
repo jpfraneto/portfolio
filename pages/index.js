@@ -4,7 +4,7 @@ import ReactModal from 'react-modal';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import jpgroup from '../public/images/jpgroup.jpg';
+import jpgroup from '../public/images/jpgroup.jpeg';
 import technologies from '../public/images/technologies.jpg';
 
 import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si';
