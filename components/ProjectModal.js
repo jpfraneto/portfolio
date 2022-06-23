@@ -20,13 +20,42 @@ const ProjectModal = ({ setIsModalOpen, projectInformationForModal }) => {
         <div className={styles.imageContainer}>
           <Image src={projectInformationForModal.image} />
         </div>
-        <div className={styles.projectDescription}>
-          {projectInformationForModal.description
-            .replace('&apos;', "'")
-            .split('\n')
-            .map((x, index) => {
-              return <p key={index}>{x}</p>;
-            })}
+        <div className={styles.allTheTextOfThisProject}>
+          {' '}
+          <div className={styles.projectDescription}>
+            {projectInformationForModal.description
+              .replace('&apos;', "'")
+              .split('\n')
+              .map((x, index) => {
+                return <p key={index}>{x}</p>;
+              })}
+          </div>
+          {projectInformationForModal.technicalDescription && (
+            <>
+              <h2>Technical Aspects</h2>
+              <div className={styles.projectDescription}>
+                {projectInformationForModal.technicalDescription
+                  .replace('&apos;', "'")
+                  .split('\n')
+                  .map((x, index) => {
+                    return <p key={index}>{x}</p>;
+                  })}
+              </div>
+            </>
+          )}
+          {projectInformationForModal.lessonsLearned && (
+            <>
+              <h2>Lessons Learned</h2>
+              <div className={styles.projectDescription}>
+                {projectInformationForModal.lessonsLearned
+                  .replace('&apos;', "'")
+                  .split('\n')
+                  .map((x, index) => {
+                    return <p key={index}>{x}</p>;
+                  })}
+              </div>
+            </>
+          )}
         </div>
 
         <div className={styles.projectLinks}>

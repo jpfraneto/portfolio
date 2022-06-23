@@ -2,8 +2,8 @@
 
 :root {
   --main-bg-color: #fcda69;
-  --secondary: #8873ef;
-  --tertiary: #b9f2fe;
+  --secondary: #0cca4a;
+  --tertiary: #e55812;
 }
 
 html,
@@ -28,4 +28,8 @@ p {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  transition: 1s;
 }

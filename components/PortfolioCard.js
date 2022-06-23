@@ -36,7 +36,7 @@ const PortfolioCard = ({
               setIsModalOpen(true);
             }}
           >
-            Project Information
+            Learn more...
           </button>
         )}
       </div>
