@@ -1,16 +1,13 @@
 import { useRef, useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import ReactModal from 'react-modal';
+
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import jpgroup from '../public/images/jpgroup.jpeg';
-import technologies from '../public/images/technologies.jpg';
 
 import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si';
 import PortfolioCard from '../components/PortfolioCard';
-import ProjectModal from '../components/ProjectModal';
-import Technologies from '../components/Technologies';
+
 import { projects } from '../data/projects';
 
 export default function Home(props) {
@@ -160,25 +157,7 @@ export default function Home(props) {
               </p>
             </div>
           </section>
-          <section
-            ref={skillsSection}
-            className={`${styles.skillsSection} ${styles.container}`}
-          >
-            <div className={styles.skillsContainer}>
-              {' '}
-              <h3>Skills & Experience</h3>
-              <p>
-                I&apos;m very good at bringing myself into places that I
-                don&apos;t know. I feel comfortable there, as it is the place
-                where growth lies.
-              </p>
-              <p>These are the technologies that I have used in my projects:</p>
-              <Technologies setTechnologyText={setTechnologyText} />
-              {technologyText && (
-                <p className={styles.techText}>{technologyText}</p>
-              )}
-            </div>
-          </section>
+
           <section
             ref={portfolioSection}
             className={`${styles.portfolioContainer} ${styles.container}`}
@@ -192,16 +171,7 @@ export default function Home(props) {
                 the means to code them into a reality.
               </p>
             </div>
-            <ReactModal
-              onRequestClose={() => setIsModalOpen(false)}
-              className={styles.modalStyles}
-              isOpen={isModalOpen}
-            >
-              <ProjectModal
-                setIsModalOpen={setIsModalOpen}
-                projectInformationForModal={modalInformation}
-              />
-            </ReactModal>
+
             <div className={styles.portfolioElementsContainer}>
               {projects.map((project, index) => {
                 return (

@@ -184,7 +184,7 @@
 }
 
 .portfolioContainer {
-  background-color: #fcda69;
+  background-color: white;
   height: auto;
   min-height: 100vh;
   padding-bottom: 30px;
@@ -195,9 +195,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .footerContainer {
+  background-color: #fcda69;
   position: relative;
   padding: 11px 0 22px;
   text-align: center;
