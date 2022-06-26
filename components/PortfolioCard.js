@@ -39,6 +39,10 @@ const technologiesImages = {
 };
 
 const PortfolioCard = ({ projectInfo }) => {
+  const openNewTab = url => {
+    const checking = confirm('Are you OK with opening a new tab?');
+    if (checking) window.open(url, '_newtab');
+  };
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageContainerShadow}>

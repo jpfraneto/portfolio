@@ -16,6 +16,7 @@
   text-align: center;
   width: 50%;
   position: relative;
+  height: 100%;
 }
 
 .projectDescription p {
@@ -24,6 +25,9 @@
 }
 
 .cardFooterContainer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .technologiesContainer {
