@@ -23,7 +23,7 @@
   margin: 0 12px;
   font-family: 'Anek Latin', sans-serif;
   font-size: 23px;
-  font-weight: 400;
+  font-weight: 900;
   cursor: pointer;
 }
 
@@ -34,7 +34,11 @@
 .jpname {
   font-family: 'Inspiration', cursive;
   font-size: 52px;
-  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.jpname:hover {
+  color: red;
 }
 
 .letsChatBtnContainer button {

@@ -56,15 +56,23 @@ const PortfolioCard = ({ projectInfo }) => {
         <h3 className={styles.projectName}>{projectInfo.name}</h3>
         <p>{projectInfo.shortDescription}</p>
         <div className={styles.cardFooterContainer}>
-          {' '}
           <div className={styles.buttonsContainer}>
-            <button onClick={() => openNewTab(projectInfo.prodUrl)}>
+            <button
+              title='I want to check it out'
+              onClick={() => openNewTab(projectInfo.prodUrl)}
+            >
               <AiOutlineLink size={30} />
             </button>
-            <button onClick={() => openNewTab(projectInfo.sourceCodeUrl)}>
+            <button
+              title='Contribute to this project'
+              onClick={() => openNewTab(projectInfo.sourceCodeUrl)}
+            >
               <AiOutlineGithub size={30} />
             </button>
-            <button onClick={() => openNewTab(projectInfo.videoUrl)}>
+            <button
+              title='Video presentation'
+              onClick={() => openNewTab(projectInfo.videoUrl)}
+            >
               <AiOutlineYoutube size={30} />
             </button>
           </div>
@@ -75,6 +83,7 @@ const PortfolioCard = ({ projectInfo }) => {
                   <Image
                     alt='technology image'
                     width={40}
+                    title={x}
                     height={40}
                     src={technologiesImages[x]}
                   />

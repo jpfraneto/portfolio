@@ -1,9 +1,11 @@
 import { useRef, useState, useEffect } from 'react';
 
 import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import jpgroup from '../public/images/jpgroup.jpeg';
+import logo from '../public/images/logo.svg';
 
 import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si';
 import PortfolioCard from '../components/PortfolioCard';
@@ -18,21 +20,6 @@ export default function Home(props) {
   const aboutMeSection = useRef(null);
   const skillsSection = useRef(null);
   const portfolioSection = useRef(null);
-
-  const handleKeydown = e => {
-    console.log('key down!', e.key);
-    if (e.key === 'Escape') {
-      console.log('IN HERE!');
-      setIsModalOpen(false);
-    }
-  };
-  useEffect(() => {
-    document.addEventListener('keydown', handleKeydown);
-
-    return () => {
-      document.removeEventListener('keydown', handleKeydown);
-    };
-  }, []);
 
   const links = [
     { reference: () => heroSection.current.scrollIntoView(), text: 'Home' },
@@ -68,7 +55,14 @@ export default function Home(props) {
       </Head>
       <>
         <nav className={styles.navbar}>
-          <div className={styles.jpname}>jp</div>
+          <Link href='/'>
+            <Image
+              className={styles.jpname}
+              src={logo}
+              width='50px'
+              height='50px'
+            />
+          </Link>
           <div>
             <ul className={styles.links}>
               {links.map((link, index) => (
