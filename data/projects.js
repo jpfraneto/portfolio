@@ -64,7 +64,7 @@ export const projects = [
   {
     name: 'Hola Mila',
     shortDescription:
-      'For sharing the first 40 days of life of my young daughter, Mila.',
+      'The window to the world for my young baby Mila, where we shared our thoughts, feelings and a picture for the first 40 days of her life.',
     lessonsLearned: '',
     videoUrl: 'https://www.youtube.com/watch?v=HwjNaZO-u10&t=1s',
     sourceCodeUrl: 'https://github.com/jpfraneto/milasuniverse',
@@ -98,7 +98,7 @@ export const projects = [
   },
   {
     shortDescription:
-      'Social network for parents that are pregntant. Place for sharing histories of birth, content related to this important process, and to connect with other people that are going through the same. ',
+      'Social network for parents that are pregnant. Place for sharing histories of birth, content related to this important process, and to connect with other people that are going through the same. ',
     name: 'Mamiferas',
     lessonsLearned:
       'One of the biggest takeaways of this project is the importance of early feedback for the development of the platform. I was throughout the month getting constant help from my partner, and building the platform with that advice in mind (thinking about what could be useful for her), but three days before publishing I sent a chain of emails to 20 persons that were going through the pregnancy process and 2 of them answered me, and gave me really useful feedback that would have been interesting to have in the beginning so that I could build the platform with them in mind. \nThe challenge that I can spot is how to communicate my idea so that they can understand the project without it existing yet. This is the role of a business analyst. And because I was this whole Open Source Factory thing just to train my skills, and not necessarily to build something useful to someone specific, that could be a challenge. I have to better understand this game of wanting to express my full creativity and wanting to build something useful, because there is a intersection there that I can leverage if Im intelligent enough. And asking people what they think about it is important. That was a great aspect of this being only the third project of the whole system, because there was so much to be done in the future.',
