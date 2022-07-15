@@ -126,11 +126,11 @@ export default function Home(props) {
               {' '}
               <h3>About Me</h3>
               <p>
-                I&apos;m an industrial and mechanical engineer, kundalini yoga
-                instructor, father of a beautiful little girl and avid explorer
-                of all the possibilities of this amazing experience called life.
-                I call myself a generalist, always willing to learn new things,
-                trying to widen my scope of action.
+                I&apos;m an industrial and mechanical engineer, breathworker,
+                father of a beautiful little girl and avid explorer of all the
+                possibilities of this amazing experience called life. I call
+                myself a generalist, always willing to learn new things, trying
+                to widen my scope of action.
               </p>
               <p>
                 Before Covid I was creating the best ice cream store of the
@@ -153,6 +153,7 @@ export default function Home(props) {
           </section>
 
           <section
+            id='portfolio'
             ref={portfolioSection}
             className={`${styles.portfolioContainer} ${styles.container}`}
           >
